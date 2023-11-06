@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Kalkulator Umur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style_ver1.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-base">
+        <form>
+          <h2 class="header-title">Kalkulator Umur</h2>
+          <div class="form-umur">
+            <label for="">Tanggal</label>
+            <input type="text" name="tanggal" id="tanggal" placeholder="Tanggal"/>
+          </div>
+          <div class="form-umur">
+            <label for="">Bulan</label>
+            <select name="bulan" id="bulan">
+              <option>Pilih Bulan</option>
+              <option value="1">Januari</option>
+              <option value="2">Februari</option>
+              <option value="3">Maret</option>
+              <option value="4">April</option>
+              <option value="5">Mei</option>
+              <option value="6">Juni</option>
+              <option value="7">Juli</option>
+              <option value="8">Agustus</option>
+              <option value="9">September</option>
+              <option value="10">Oktober</option>
+              <option value="11">November</option>
+              <option value="12">Desember</option>
+            </select>
+          </div>
+          <div class="form-umur">
+            <label for="">Tahun</label>
+            <input type="text" name="tahun" id="tahun" min="4" max="4" placeholder="Tahun"/>
+          </div>
+        </form>
+      </div>
+      <button class="hitung-umur" type="submit">Hitung Umur</button>
+      <div class="display-umur"></div>
+    </div>
+
+    <script src="js_ver1.js"></script>
+  </body>
+</html>
